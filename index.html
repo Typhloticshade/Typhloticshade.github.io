@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Base Stat Comparison</title>
+</head>
+<body>
+
+  <header>
+    <h1>Pokémon Base Stat Comparison</h1>
+    <p>
+      Comparing aggregate base stats of Pokémon at their generation of introduction.
+    </p>
+  </header>
+
+  <main>
+
+    <!-- Comparison Controls -->
+    <section aria-labelledby="comparison-controls">
+      <h2 id="comparison-controls">Compare Generations</h2>
+
+      <form>
+        <label for="gen-a">Generation A</label>
+        <select id="gen-a" name="gen-a">
+          <option value="1">Generation I (Red / Blue)</option>
+          <option value="2">Generation II (Gold / Silver)</option>
+          <option value="3">Generation III (Ruby / Sapphire)</option>
+        </select>
+
+        <span>vs</span>
+
+        <label for="gen-b">Generation B</label>
+        <select id="gen-b" name="gen-b">
+          <option value="2">Generation II (Gold / Silver)</option>
+          <option value="1">Generation I (Red / Blue)</option>
+          <option value="3">Generation III (Ruby / Sapphire)</option>
+        </select>
+
+        <button type="submit">Compare</button>
+      </form>
+    </section>
+
+    <!-- Comparison Summary -->
+    <section aria-labelledby="summary">
+      <h2 id="summary">Base Stat Summary</h2>
+
+      <div>
+        <h3>Average Total Base Stats</h3>
+        <p>
+          <strong id="gen-a-avg">—</strong>
+          <span>vs</span>
+          <strong id="gen-b-avg">—</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Metrics Grid -->
+    <section aria-labelledby="metrics">
+      <h2 id="metrics">Statistical Metrics</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th id="gen-a-label">Generation A</th>
+            <th id="gen-b-label">Generation B</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Median Total Base Stats</td>
+            <td id="gen-a-median">—</td>
+            <td id="gen-b-median">—</td>
+          </tr>
+          <tr>
+            <td>Standard Deviation</td>
+            <td id="gen-a-std">—</td>
+            <td id="gen-b-std">—</td>
+          </tr>
+          <tr>
+            <td>Pokémon Introduced</td>
+            <td id="gen-a-count">—</td>
+            <td id="gen-b-count">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Statistics reflect Pokémon only at their generation of introduction.
+    </p>
+  </footer>
+
+</body>
+</html>
