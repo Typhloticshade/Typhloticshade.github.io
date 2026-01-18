@@ -21,7 +21,7 @@ const MOCK_DATA = {
     std: 88
   }
 };
-
+console.log('JS is currently functional');
 function render(genA, genB) {
   const a = MOCK_DATA[genA];
   const b = MOCK_DATA[genB];
