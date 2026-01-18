@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: #94a3b8;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+select, button {
+  padding: 0.4rem 0.6rem;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+button {
+  cursor: pointer;
+}
+
+.vs {
+  opacity: 0.6;
+}
+
+.summary {
+  margin-bottom: 2rem;
+}
+
+.avg-row {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.2rem;
+}
+
+.avg-row strong {
+  display: block;
+  font-size: 2rem;
+}
+
+.metrics table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #334155;
+}
+
+th {
+  text-align: left;
+  color: #94a3b8;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
